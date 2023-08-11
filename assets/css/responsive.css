@@ -48,4 +48,13 @@
         --fs-18px: 16px;
         --fs-16px: 15px;
     }
+    .heroSearch {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .pricingMain {
+        padding: 20px;
+    }
 }
