@@ -1,0 +1,51 @@
+@media only screen and (max-width: 992px) {
+
+    :root {
+        --fs-40: 40px;
+        --fs-30: 30px;
+        --fs-24: 24px;
+        --fs-20: 20px;
+        --fs-18px: 18px;
+        --fs-16px: 16px;
+    }
+
+
+    section:not(.heroSection) {
+        padding: 50px 0 !important;
+    }
+
+    .heroSearch .borderOverlay {
+        width: 80%;
+    }
+
+    .pricingMain * {
+        text-align: center;
+    }
+
+    footer {
+        padding: 50px 0;
+    }
+
+    footer * {
+        text-align: center;
+    }
+
+    .topFooter {
+        margin-bottom: 30px;
+    }
+    .quickMain  {
+        padding: 20px;
+        height: auto;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    :root {
+        --fs-40: 30px;
+        --fs-30: 27px;
+        --fs-24: 20px;
+        --fs-20: 18px;
+        --fs-18px: 16px;
+        --fs-16px: 15px;
+    }
+}

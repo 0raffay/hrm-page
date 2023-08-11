@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-------------- bootstrap css start-------------->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <!-- ------------bootstrap css End-------------->
+
+  <!----- ------------font awesome start ----------------->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+
+  <!----- ------------font awesome End ----------------->
+
+
+  <!-- ------------slick css Start -------------->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"
+    integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"
+    integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- ------------slick css End-------------->
+
+  <!-- ------------jquery Start -------------->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <!-- ------------jquery Start -------------->
+
+
+  <!-- ------------FancyBox start-------------->
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+  <!-------------- FancyBox End-------------->
+
+  <!-- ------------fonts -------------->
+
+
+  <!-------- local files Start -------->
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/responsive.css">
+  <!-- ------local files End -------->
+
+  <title>Home</title>
+</head>
+
+<body>
+
+  <!--===== HEADER START =====-->
+  <header>
+    <div class="container">
+      <div class="headerContainer">
+        <div class="logo">
+          <img src="./assets/images/logo.png" alt="">
+        </div>
+        <nav>
+          <ul class="navList">
+            <li>Product <i class="ri-arrow-down-s-line"></i>
+              <div class="submenu">
+                <ul>
+                  <li><a href="#">Pricing</a></li>
+                  <li><a href="#">Enterprise</a></li>
+                  <li><a href="#">Contact Sales</a></li>
+                </ul>
+              </div>
+            </li>
+            <li>Learn <i class="ri-arrow-down-s-line"></i>
+              <div class="submenu">
+                <ul>
+                  <li><a href="#">Pricing</a></li>
+                  <li><a href="#">Enterprise</a></li>
+                  <li><a href="#">Contact Sales</a></li>
+                </ul>
+              </div>
+            </li>
+            <li>Solutions <i class="ri-arrow-down-s-line"></i>
+              <div class="submenu">
+                <ul>
+                  <li><a href="#">Pricing</a></li>
+                  <li><a href="#">Enterprise</a></li>
+                  <li><a href="#">Contact Sales</a></li>
+                </ul>
+              </div>
+            </li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Enterprise</a></li>
+            <li><a href="#">Contact Sales</a></li>
+          </ul>
+        </nav>
+        <div class="headerButton">
+          <a href="" class="btn btn-primary">Log in</a>
+        </div>
+
+        <div class="burger-menu" id="menu-toggle">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        <div class="mobile-nav">
+          <div class="mobileLogo">
+            <img src="assets/images/logo.png" alt="logo">
+            <button class="cross" id="crossNav"><i class="fa-solid fa-xmark"></i></button>
+          </div>
+   
+          <div class="mobileNavList">
+            <li class="slideDown">Products
+              <span class="nav__arrow">
+                <i class="ri-arrow-down-s-line"></i>
+              </span>
+              <ul class="phoneSubMenu">
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Enterprise</a></li>
+                <li><a href="#">Contact Sales</a></li>
+              </ul>
+            </li>
+            <li class="slideDown">Learn
+              <span class="nav__arrow">
+                <i class="ri-arrow-down-s-line"></i>
+              </span>
+              <ul class="phoneSubMenu">
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Enterprise</a></li>
+                <li><a href="#">Contact Sales</a></li>
+              </ul>
+            </li>
+            <!-- <li><a href="<?php echo get_template_directory_uri(  )?>/#">Qurbani</a></li> -->
+            <li class="slideDown">Solutions
+              <span class="nav__arrow">
+                <i class="ri-arrow-down-s-line"></i>
+              </span>
+              <ul class="phoneSubMenu">
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Enterprise</a></li>
+                <li><a href="#">Contact Sales</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Enterprise</a></li>
+            <li><a href="#">Contact Sales</a></li>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!--===== HEADER START =====-->
+
+
+  <!--===== HERO BANNER START =====-->
+  <section class="heroSection">
+    <div class="container">
+      <div class="bannerText">
+        <h1>Empowering Your Workforce with HRM Excellence</h1>
+        <h2>Whether your team is big, small, in-person, or remote, HRM has the payroll, benefits, and hiring tools you
+          need, all in one place. Honest prices. No hidden fees. No surprises.</h2>
+        <div class="heroSectionButtons">
+          <a href="#" class="btn btn-primary">How HRM works</a>
+          <a href="#" class="btn btn-inverse">Create account</a>
+        </div>
+      </div>
+      <div class="searchWrapper">
+        <div class="heroSearch">
+          <div class="borderOverlay"></div>
+          <input type="text" placeholder="Enter your work email">
+          <button>Start Free Trial</button>
+        </div>
+      </div>
+      <div class="heroSectionFooter">
+        <h3>JOIN THE 100,000 CUSTOMERS WORLDWIDE WHO TRUST JIRA</h3>
+        <div class="horizontalAnimationWrapper">
+          <div class="hr-animation-container">
+            <div>
+              <div class="img__wrap">
+                <img src="assets/images/b-logo-1.png" alt="">
+              </div>
+              <div class="img__wrap">
+                <img src="assets/images/b-logo-2.png" alt="">
+              </div>
+              <div class="img__wrap">
+                <img src="assets/images/b-logo-3.png" alt="">
+              </div>
+              <div class="img__wrap">
+                <img src="assets/images/b-logo-4.png" alt="">
+              </div>
+              <div class="img__wrap">
+                <img src="assets/images/b-logo-5.png" alt="">
+              </div>
+            </div>
+            <div>
+              <div class="img__wrap">
+                <img src="assets/images/b-logo-1.png" alt="">
+              </div>
+              <div class="img__wrap">
+                <img src="assets/images/b-logo-2.png" alt="">
+              </div>
+              <div class="img__wrap">
+                <img src="assets/images/b-logo-3.png" alt="">
+              </div>
+              <div class="img__wrap">
+                <img src="assets/images/b-logo-4.png" alt="">
+              </div>
+              <div class="img__wrap">
+                <img src="assets/images/b-logo-5.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--===== HERO BANNER END =====-->
+
+  <!--===== QUICK START START =====-->
+  <section class="quickSection">
+    <div class="container">
+      <div class="quickMain">
+        <div class="quickText">
+          <h4>Quickly pay your team, no matter where they are</h4>
+          <p>nparalleled Results: Our notification system keeps your workforce informed and engaged like never before.
+            With real-time updates on important announcements, upcoming events, and personalized alerts</p>
+          <a href="#" class="btn btn-primary">How HRM works</a>
+        </div>
+        <div class="img__wrap">
+          <img src="assets/images/hrm-img.png">
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--===== QUICK START END =====-->
+
+  <!--===== PANEL SECTION START =====-->
+  <section class="panelSection">
+    <div class="container">
+      <div class="util__panel">
+        <div class="img__wrap">
+          <img src="assets/images/home-panel-1.png" alt="">
+        </div>
+        <div class="panelText">
+          <h5>Empowering Your Recruitment with HRM Solutions</h5>
+          <p>Discover a Smarter Way to Recruit: Our cutting-edge recruitment system revolutionizes the way you find,
+            attract, and hire top talent. With advanced AI-driven candidate matching, automated applicant tracking, and
+            streamlined communication tools, HRM Solutions empowers your HR team to make data-backed decisions and build
+            a winning workforce.</p>
+        </div>
+      </div>
+      <div class="util__panel flex-direction-row-reverse">
+        <div class="img__wrap">
+          <img src="assets/images/home-panel-2.png" alt="">
+        </div>
+        <div class="panelText">
+          <h5>HRM Solutions' Proactive Notification System</h5>
+          <p>"Efficient Communication, Unparalleled Results: Our notification system keeps your workforce informed and
+            engaged like never before. With real-time updates on important announcements, upcoming events, and
+            personalized alerts, HRM Solutions ensures seamless communication across your organization. Say goodbye to
+            missed deadlines and welcome a connected, motivated workforce that drives productivity to new heights.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--===== PANEL SECTION END =====-->
+
+  <!--===== REPORT SECTION START =====-->
+  <section class="reportSection">
+    <div class="container">
+      <h4 class="section__heading text-center">We’re helping HR run smoother than ever</h4>
+      <div class="util__panel">
+        <div class="reportCards">
+          <div>
+            <div class="img__wrap">
+              <img src="assets/images/report-1.png" alt="">
+            </div>
+            <div class="reportText">
+              <h6>Dynamic reports and dashboards</h6>
+              <p>Follow the status of your team's projects via high-level overviews, customized dashboards, or 30+
+                reports. Discover bottlenecks and continuously improve.</p>
+            </div>
+          </div>
+        </div>
+        <div class="reportCards">
+          <div>
+            <div class="img__wrap">
+              <img src="assets/images/report-2.png" alt="">
+            </div>
+            <div class="reportText">
+              <h6>Templates for HR teams</h6>
+              <p>Follow the status of your team's projects via high-level overviews, customized dashboards, or 30+
+                reports. Discover bottlenecks and continuously improve.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--===== REPORT SECTION END =====-->
+
+  <!--===== TESTIMONIAL SECTION START =====-->
+  <section class="testimonialSection">
+    <div class="testimonialMain">
+      <div class="container">
+        <div class="testiText">
+          <p>As a business owner, there are a lot of things that stress me out, but with Gusto, running payroll isn’t
+            one of them. I know my employees will be paid on time and all reports will be filed accurately.</p>
+          <h6>OwnerThe Art Terrarium, LLC</h6>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--===== TESTIMONIAL SECTION END =====-->
+
+  <!--===== PRICING SECTION START =====-->
+  <section class="pricingSection">
+    <div class="container">
+      <div class="pricingMain util__panel">
+        <div class="pricingText">
+          <h5>Pricing plans start at just $46/month</h5>
+          <p>Choose from a variety of plans and add-ons. You won’t pay a cent until you’re ready to run payroll.</p>
+        </div>
+        <div>
+          <a href="#" class="btn">See pricing</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--===== PRICING SECTION END =====-->
+
+  <footer>
+    <div class="container">
+      <div class="topFooter">
+        <div class="util__panel">
+          <div class="ft_logo">
+            <img src="assets/images/footer-logo.png">
+          </div>
+          <div class="footerLinks util__panel">
+              <div>
+                <h6>Products</h6>
+                <ul>
+                  <li><a href="#">HRM software</a></li>
+                  <li><a href="#">Hr management </a></li>
+                  <li><a href="#">Dashboards</a></li>
+                  <li><a href="#">Integrations</a></li>
+                  <li><a href="#">Automations</a></li>
+                </ul>
+              </div>
+              <div>
+                <h6>Resources</h6>
+                <ul>
+                  <li><a href="#">HRM software</a></li>
+                  <li><a href="#">Hr management </a></li>
+                  <li><a href="#">Dashboards</a></li>
+                  <li><a href="#">Integrations</a></li>
+                  <li><a href="#">Automations</a></li>
+                </ul>
+              </div>
+              <div>
+                <h6>Learn</h6>
+                <ul>
+                  <li><a href="#">HRM software</a></li>
+                  <li><a href="#">Hr management </a></li>
+                  <li><a href="#">Dashboards</a></li>
+                  <li><a href="#">Integrations</a></li>
+                  <li><a href="#">Automations</a></li>
+                </ul>
+              </div>
+              <div>
+                <h6>About</h6>
+                <ul>
+                  <li><a href="#">HRM software</a></li>
+                  <li><a href="#">Hr management </a></li>
+                  <li><a href="#">Dashboards</a></li>
+                  <li><a href="#">Integrations</a></li>
+                  <li><a href="#">Automations</a></li>
+                </ul>
+              </div>
+          </div>
+        </div>
+      </div>
+      <div class="bottomFooter">
+        <div class="util__panel">
+          <p>Privacy. Terms and Conditions</p>
+          <div class="flex gap-20">
+            <a href=""><i class="ri-twitter-line"></i></a>
+            <a href=""><i class="ri-instagram-line"></i></a>
+            <a href=""><i class="ri-linkedin-box-line"></i></a>
+            <a href=""><i class="ri-facebook-box-line"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+<!------------ bootstrap js start ------------>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+  integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
+  integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<!------------ bootstrap js End ------------>
+
+<!------------ slick js Start ------------>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+  integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<!------------ slick js End ------------>
+
+<!------------ ion icons Start------------>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<!------------ ion icons End------------>
+
+
+<!-------------- local files Start -------------->
+<script src="./assets/js/script.js"></script>
+<!-------------- local files End -------------->
+
+</html>
