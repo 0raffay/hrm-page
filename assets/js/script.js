@@ -1,5 +1,6 @@
 $(document).ready(function () {
     header()
+    sliders()
 });
 
 function header() {
@@ -44,4 +45,11 @@ function header() {
             pPopUp = false;
         }
     });
+}
+
+function sliders () {
+    $('.contactSlider').slick({
+        arrows: false,
+        dots: true,
+    })
 }

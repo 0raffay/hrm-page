@@ -33,7 +33,8 @@
     .topFooter {
         margin-bottom: 30px;
     }
-    .quickMain  {
+
+    .quickMain {
         padding: 20px;
         height: auto;
     }
@@ -48,13 +49,60 @@
         --fs-18px: 16px;
         --fs-16px: 15px;
     }
-    .heroSearch {
+
+    /* .heroSearch {
         flex-direction: column;
         align-items: center;
         justify-content: center;
+    } */
+
+    .searchWrapper {
+        margin-bottom: 50px;
+    }
+
+    .testimonialMain {
+        padding: 50px 10px;
     }
 
     .pricingMain {
         padding: 20px;
+    }
+
+    .heroSearch .borderOverlay {
+        top: -19;
+    }
+
+    .heroSectionButtons {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .heroSearch button {
+        padding: 10px;
+        max-width: max-content;
+    }
+
+    .heroSearch input {
+        font-size: 14px;
+    }
+
+    .panelSection .util__panel:not(:last-child) {
+        margin-bottom: 50px;
+    }
+
+    .panelText {
+        text-align: center;
+    }
+
+    section.pricingSection {
+        padding: 30px 0 !important;
+    }
+
+    .formGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .formGrid>div:has(textarea) {
+        grid-column: unset;
     }
 }

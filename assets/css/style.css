@@ -25,7 +25,7 @@ a:hover {
 
     --fc-primary: #292D34;
     --fc-secondary: #7C828D;
-    --fc-accent: #fff;
+    --fc-accent: #FFF;
 
     --fs-40: 40px;
     --fs-30: 30px;
@@ -45,8 +45,40 @@ body {
     font-family: var(--ff-primary);
 }
 
+/* scoll bar */
+::-webkit-scrollbar {
+    width: 8px;
+    /* Adjust the width as needed */
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, #70B3F2 0%, #4437FF 100%);
+    opacity: 0.8;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    opacity: 1;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #e0e0e0;
+}
+
+::-webkit-scrollbar-track-piece {
+    background-color: #e0e0e0;
+}
+
+::-webkit-scrollbar-corner {
+    background-color: #f0f0f0;
+}
+
 img {
     max-width: 100%;
+}
+
+button {
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
 button,
@@ -169,13 +201,22 @@ select {
 .btn {
     padding: 10px 24px;
     border-radius: 8px;
+    border: none;
     color: var(--fc-accent);
     font-size: 15px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1)
 }
 
+button:hover,
+.btn:hover {
+    scale: 0.92;
+}
+
+.btn-primary:hover,
 .btn-primary {
     background-color: var(--clr-primary);
     color: var(--fc-accent);
@@ -245,9 +286,11 @@ nav .navList li a {
     top: 100%;
     left: 0;
     right: 0;
+    z-index: 2;
+
     width: 180px;
 
-    background: #fff;
+    background: var(--fc-accent);
     border-radius: 10px;
 
 }
@@ -287,8 +330,8 @@ nav .navList li a {
 }
 
 .burger-menu>div {
-    width: 40px;
-    height: 5px;
+    width: 28px;
+    height: 4px;
     border-radius: 4px;
     margin-bottom: 5px;
     background-color: var(--clr-primary);
@@ -394,7 +437,7 @@ nav .navList li a {
         top: 0;
         width: 100%;
         max-width: 80%;
-        background-color: #fff;
+        background-color: var(--fc-accent);
         height: 100%;
         z-index: 7;
         padding: 40px 30px;
@@ -415,8 +458,15 @@ nav .navList li a {
     }
 
     .mobileNavList li {
-        font-size: 14px;
-        /* width: ; */
+        font-size: 20px;
+    }
+
+    .slideDown .nav__arrow i {
+        font-size: 24px;
+    }
+
+    .cross i {
+        font-size: 24px;
     }
 
     .headSocialIcons {
@@ -485,7 +535,7 @@ nav .navList li a {
     padding: 15px 25px;
 
     border-radius: 15px;
-    background: #FFF;
+    background: var(--fc-accent);
 
     display: flex;
     justify-content: space-between;
@@ -531,7 +581,7 @@ nav .navList li a {
 }
 
 .heroSectionFooter h3 {
-    color: #FFF;
+    color: var(--fc-accent);
     font-size: 14px;
     font-weight: 600;
     line-height: 125%;
@@ -596,7 +646,7 @@ nav .navList li a {
 
 /********* PANEL SECTION START *********/
 
-.panelSection .util__panel {
+.panelSection .util__panel:not(:last-child) {
     align-items: center;
     margin-bottom: 70px;
 }
@@ -626,6 +676,157 @@ nav .navList li a {
 }
 
 /********* PANEL SECTION END *********/
+
+/********* CONTACT SECTION START *********/
+.contactSliderContainer {
+    padding: 100px 50px;
+
+    max-width: 574px;
+    width: 100%;
+
+    border-radius: 15px;
+    background:linear-gradient(180deg, #84EDC2 0%, #45b3cf 96.88%);
+}
+
+.contactSliderCard .img__wrap {
+    margin-bottom: 20px;
+}
+
+.contactSliderText {
+    text-align: center;
+    max-width: 407px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.contactSliderText h5 {
+    color: var(--fc-accent);
+    font-size: var(--fs-24);
+    font-style: normal;
+    font-weight: 700;
+    line-height: 125%;
+}
+
+.contactSliderText p {
+    color: var(--fc-accent);
+    font-size: var(--fs-16px);
+    font-weight: 400;
+    line-height: 125%;
+}
+
+.contactFormMain {
+    max-width: 496px;
+    width: 100%;
+    padding: 10px 0;
+}
+
+.formGrid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(241px, 1fr));
+    column-gap: 14px;
+    row-gap: 24px;
+}
+
+.formGrid>div:has(textarea) {
+    grid-column: span 2;
+}
+
+.contactFormMain h4 {
+    color: var(--fc-primary);
+    font-size: var(--fs-40);
+    font-weight: 600;
+    line-height: 125%;
+    margin-bottom: 1em;
+}
+
+.contactFormMain form label {
+    color: var(--fc-secondary);
+    font-size: var(--fs-16px);
+    font-weight: 600;
+    line-height: 125%;
+
+    cursor: pointer;
+}
+
+.contactFormMain form label span {
+    color: #B3BAC8;
+}
+
+.contactFormMain form input,
+.contactFormMain form textarea {
+    height: 44px;
+    border-radius: 8px;
+    border: 2px solid #EEF2F5;
+    display: block;
+    width: 100%;
+    padding: 10px 10px;
+    font-size: 14px;
+    color: var(--fc-primary);
+}
+
+.contactFormMain form input:focus,
+.contactFormMain form textarea:focus {
+    outline: 1px solid#0073DE;
+}
+
+.contactFormMain form textarea {
+    height: 179px;
+    margin-bottom: 30px;
+}
+
+.contactFormMain form button {
+    padding: 10px 24px;
+    width: 100%;
+    display: block;
+
+    color: var(--fc-accent);
+    font-size: 15px;
+    font-weight: 700;
+    line-height: normal;
+
+    border-radius: 8px;
+    background: #FF924B;
+    box-shadow: 0px 5px 30px 0px rgba(249, 193, 157, 0.70);
+}
+
+/* CUSTOM DOTS START*/
+
+.slick-dots li {
+    padding: 0;
+    margin: 0;
+    height: auto;
+    width: auto;
+}
+
+.slick-dots li button::before {
+    display: none;
+}
+
+.slick-dots li button {
+    display: block;
+    background-color: #FFF;
+    height: 11px;
+    width: 11px;
+    border-radius: 100%;
+
+    margin: 0 5px;
+    padding: 0;
+
+    transition: width 250ms cubic-bezier(0.165, 0.84, 0.44, 1);
+    transform-origin: center;
+}
+
+.slick-dots li.slick-active button {
+    width: 63px;
+    border-radius: 7px;
+}
+
+/* CUSTOM DOTS END */
+
+
+
+
+/********* CONTACT SECTION END *********/
 
 /********* REPORT SECTION START *********/
 
@@ -783,7 +984,7 @@ footer {
 
 .bottomFooter {
     padding: 20px 0 0;
-    border-top: 2px solid #fff;
+    border-top: 2px solid var(--fc-accent);
 }
 
 .bottomFooter * {
